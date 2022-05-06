@@ -1,0 +1,40 @@
+@import '../../assets/styles/mixins';
+@import '../../assets/styles/variables';
+
+.dropdown {
+  margin-left: 20px;
+}
+
+.avatar {
+  cursor: pointer;
+  @include flexbox();
+  min-width: 50px;
+  min-height: 50px;
+  max-width: 50px;
+  max-height: 50px;
+  border-radius: 50%;
+  border: 3px solid $color-light-blue;
+}
+
+.control {
+  min-width: 50px;
+  min-height: 50px;
+  max-width: 50px;
+  max-height: 50px;
+  border-radius: 50% !important;
+  border: none;
+}
+
+.menu {
+  width: 300px;
+}
+
+.option {
+  cursor: pointer;
+  padding: 10px;
+  white-space: nowrap;
+
+  &:hover {
+    background: #eaf3fa;
+  }
+}

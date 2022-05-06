@@ -1,0 +1,10 @@
+@import '../../assets/styles/mixins';
+@import '../../assets/styles/variables';
+
+.error {
+  .container {
+    .control {
+      background-color: $color-error;
+    }
+  }
+}

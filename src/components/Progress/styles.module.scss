@@ -1,0 +1,37 @@
+.container {
+  display: flex;
+  max-width: 800px;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.container :first-child {
+  display: none;
+}
+
+.step {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 30px;
+  min-height: 30px;
+  border-radius: 50%;
+  background: #887d9f;
+}
+
+.active {
+  background: #16d738;
+}
+
+.progress {
+  display: flex;
+  width: 100%;
+  background: #887d9f;
+  height: 4px;
+}
+
+.done {
+  background: #16d738;
+}

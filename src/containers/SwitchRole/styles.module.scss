@@ -1,0 +1,32 @@
+@import '../../assets/styles/mixins';
+@import '../../assets/styles/variables';
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.info {
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 30px;
+}
+
+.currencyLogo {
+  height: 50px;
+}
+
+.logoEth {
+  max-width: 40px;
+}
+
+.logoBnb {
+  max-width: 70px;
+}
+
+.loader {
+  margin-top: 5px;
+}

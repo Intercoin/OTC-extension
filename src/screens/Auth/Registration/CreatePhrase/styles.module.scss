@@ -1,0 +1,40 @@
+@import '../../../../assets/styles/mixins';
+@import '../../../../assets/styles/variables';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.phraseWrap {
+  position: relative;
+  @include flexbox();
+  text-align: center;
+  border: $color-light-blue solid 1px;
+  border-radius: $border-radius-md;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.phraseContainer {
+  @include flexbox();
+  height: 100px;
+  filter: blur(4px);
+}
+
+.phraseShow {
+  filter: blur(0);
+}
+
+.buttonShow {
+  max-width: 100px;
+  cursor: pointer;
+  position: absolute;
+  z-index: $toast-container-z-index;
+}

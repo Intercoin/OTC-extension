@@ -1,0 +1,46 @@
+// font-size
+$font-size-text-sm: 16px;
+$font-size-text-lg: 18px;
+$font-size-text-xl: 20px;
+
+$font-size-title-xl: 68px;
+$font-size-title-lg: 48px;
+$font-size-title-lgs: 40px;
+$font-size-title-md: 36px;
+$font-size-title-sm: 32px;
+
+//animation
+$animation-time: 0.3s;
+
+// colors
+$color-root: rgb(40, 13, 95);
+$color-error: rgb(210, 24, 24);
+$color-grey: rgb(231, 227, 235);
+$color-green: #16d738;
+$color-light-blue: #1fc7d4;
+
+// border-radius
+$border-radius-sm: 4px;
+$border-radius-md: 16px;
+$border-radius-tab: 24px;
+
+// z-indexes
+$tooltip-z-index: 5;
+$confirm-alert-z-index: 10;
+$carousel-control-z-index: 3;
+$modal-overlay-z-index: 9;
+$toast-container-z-index: 15;
+
+// window min-width
+$mobile: 576;
+$tablet: 768;
+$tablet-big: 992;
+$desktop-min: 1024;
+$desktop-sm: 1200;
+$desktop: 1440;
+$desktop-md: 1600;
+$desktop-big: 1920;
+
+// margin-bottom
+$margin-bottom-container: 1em;
+$margin-bottom-big: 3em;

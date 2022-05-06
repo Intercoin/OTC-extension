@@ -1,0 +1,12 @@
+@import './variables';
+
+:export {
+  mobile: $mobile;
+  tablet: $tablet;
+  tabletBig: $tablet-big;
+  desktopMin: $desktop-min;
+  desktopSm: $desktop-sm;
+  desktop: $desktop;
+  desktopMd: $desktop-md;
+  desktopBig: $desktop-big;
+}

@@ -1,0 +1,22 @@
+.loaderWrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loader{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #dcefff;
+  border-top: 2px solid blue;
+  animation: rotate 2s infinite ease;
+}
+@keyframes rotate {
+  0% {
+    transform: none;
+  }
+  100% {
+    transform: rotate(1turn);
+  }
+}

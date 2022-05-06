@@ -1,0 +1,117 @@
+@import '../../assets/styles/mixins';
+@import '../../assets/styles/variables';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  padding: 16px;
+  width: 100%;
+}
+
+.title {
+  margin: 20px;
+  text-align: center;
+  font-size: 24px;
+}
+
+.accountWrap {
+  @include flexbox(center, space-between);
+  width: 100%;
+}
+
+.logoWrap {
+  max-width: 60px;
+  overflow: hidden;
+
+  .avatarWrap {
+    @include flexbox();
+    flex-direction: column;
+  }
+
+  .name {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-align: center;
+  }
+}
+
+.account {
+  @include flexbox();
+  flex-direction: column;
+  width: 85%;
+  padding: 20px 0 20px 20px;
+}
+
+.wrap {
+  padding: 16px 0;
+}
+
+.accountInfo {
+  @include flexbox(center, space-between);
+  width: 100%;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.avatar {
+  cursor: pointer;
+  @include flexbox();
+  min-width: 50px;
+  min-height: 50px;
+  max-width: 50px;
+  max-height: 50px;
+  border-radius: 50%;
+  border: 3px solid $color-light-blue;
+  margin-bottom: 5px;
+}
+
+.infoWrap {
+  padding: 16px 16px 6px;
+  border: 1px solid $color-grey;
+}
+
+.toInfo {
+  margin-left: 20px;
+}
+
+.person {
+  @include flexbox(center, space-between);
+  width: 100%;
+  padding-bottom: 10px;
+
+  .name {
+    margin-left: 10px;
+  }
+}
+
+.personInfoWrap {
+  display: flex;
+  overflow: hidden;
+  max-width: 280px;
+}
+
+.personInfo {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-left: 10px;
+}
+
+.contract {
+  max-width: 340px;
+}
+
+.buttonWrap {
+  margin-top: 20px;
+  @include flexbox();
+}
+
+.button {
+  margin-right: 20px;
+}
+
+.subtitle {
+  margin: 0 0 5px;
+}

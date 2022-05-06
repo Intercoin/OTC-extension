@@ -1,0 +1,57 @@
+@import '../../assets/styles/mixins';
+@import '../../assets/styles/variables';
+
+.title {
+  color: $color-root;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.size_m {
+  font-size: $font-size-title-sm;
+
+  @include mobile {
+    font-size: $font-size-title-sm;
+  }
+  @include tablet {
+    font-size: $font-size-title-md;
+  }
+
+  @include tablet-big {
+    font-size: $font-size-title-lg;
+  }
+}
+
+.size_l {
+  font-size: $font-size-title-md;
+
+  @include mobile {
+    font-size: $font-size-title-lgs;
+  }
+
+  @include tablet {
+    font-size: $font-size-title-lg;
+  }
+
+  @include tablet-big {
+    font-size: $font-size-title-xl;
+  }
+}
+
+.text {
+  font-weight: normal;
+  font-size: $font-size-text-lg;
+  line-height: 24px;
+  color: $color-root;
+  margin: 0;
+
+  @include mobile {
+  font-size: $font-size-text-sm;
+  }
+
+  @include tablet-big {
+    line-height: 28px;
+    font-size: $font-size-text-xl;
+  }
+}
+

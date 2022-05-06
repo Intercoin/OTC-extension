@@ -1,0 +1,61 @@
+@import './variables';
+
+$defaultFlexboxAlign: center;
+$defaultFlexboxJustify: center;
+$defaultFlexboxDirection: row;
+
+@mixin flexbox($align: $defaultFlexboxAlign, $justify: $defaultFlexboxJustify, $direction: $defaultFlexboxDirection) {
+  display: flex;
+  align-items: $align;
+  justify-content: $justify;
+  flex-direction: $direction;
+}
+
+// Mixins for mobile-first template
+@mixin mobile {
+  @media (min-width: $mobile + px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: $tablet + px) {
+    @content;
+  }
+}
+
+@mixin tablet-big {
+  @media (min-width: $tablet-big + px) {
+    @content;
+  }
+}
+
+@mixin desktop-min {
+  @media (min-width: $desktop-min + px) {
+    @content;
+  }
+}
+
+@mixin desktop-sm {
+  @media (min-width: $desktop-sm + px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: $desktop + px) {
+    @content;
+  }
+}
+
+@mixin desktop-md {
+  @media (min-width: $desktop-md + px) {
+    @content;
+  }
+}
+
+@mixin desktop-big {
+  @media (min-width: $desktop-big + px) {
+    @content;
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "short_name": "OTC",
+  "name": "OTC interface",
+  "manifest_version": 3,
+  "version": "0.1",
+  "background": {
+    "service_worker": "./background.js"
+  },
+  "permissions": ["tabs"],
+  "action": {
+    "default_popup": "index.html",
+    "default_title": "React Chrome Extension",
+    "default_icon": {
+      "16": "logo192.png",
+      "32": "logo192.png",
+      "48": "logo192.png",
+      "128": "logo192.png"
+    }
+  },
+  "icons": {
+    "16": "logo192.png",
+    "32": "logo192.png",
+    "48": "logo192.png",
+    "128": "logo192.png"
+  }
+}

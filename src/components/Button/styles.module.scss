@@ -1,0 +1,26 @@
+@import '../../assets/styles/mixins';
+@import '../../assets/styles/variables';
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  width: 100%;
+  border-radius: $border-radius-sm;
+  padding: 8px 20px;
+  color: white;
+  background: rgb(31, 199, 212);
+  border: none;
+  font-size: $font-size-text-lg;
+  transition: opacity $animation-time;
+
+  &:hover {
+    opacity: 0.65;
+  }
+
+  &:disabled {
+    background: rgb(176, 183, 185);
+    cursor: no-drop;
+  }
+}

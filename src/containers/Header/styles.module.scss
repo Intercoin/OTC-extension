@@ -1,0 +1,32 @@
+@import '../../assets/styles/variables';
+@import '../../assets/styles/mixins';
+
+$border-radius: $border-radius-md $border-radius-md 0 0;
+
+.container {
+  display: flex;
+  width: 100%;
+  max-width: 500px;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 30px 1em 1em;
+  border-bottom: none;
+  border-radius: $border-radius;
+}
+
+.ddWrap {
+  @include flexbox();
+
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.avatar {
+  @include flexbox();
+  min-width: 50px;
+  min-height: 50px;
+  border-radius: 50%;
+  border: 3px solid $color-light-blue;
+  margin-left: 20px;
+}

@@ -1,0 +1,64 @@
+@import './variables';
+@import './coffinstone';
+@import './asul';
+
+$base-font: 'Asul',
+'Coffinstone',
+sans-serif,
+;
+
+html,
+body,
+div[id="root"] {
+  font-family: $base-font;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  scroll-behavior: smooth;
+  height: 100%;
+}
+
+body {
+  color: $color-root;
+}
+
+html,
+body,
+button {
+  font-family: $base-font;
+}
+
+body.body-overflow {
+  overflow: hidden;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0;
+  /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+  /* Firefox */
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+
+  &:hover,
+  &:active,
+  &:focus {
+    outline: none;
+    text-decoration: none;
+  }
+}

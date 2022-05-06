@@ -1,0 +1,11 @@
+@import '../../../../../assets/styles/mixins';
+@import '../../../../../assets/styles/variables';
+
+.button {
+  max-width: 100px;
+}
+
+.buttonActive {
+  background: transparent;
+  color: $color-light-blue;
+}

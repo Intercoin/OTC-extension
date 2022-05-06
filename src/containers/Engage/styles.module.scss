@@ -1,0 +1,25 @@
+@import '../../assets/styles/mixins';
+@import '../../assets/styles/variables';
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputWrapper {
+  display: flex;
+  width: 100%;
+  margin-bottom: $margin-bottom-container;
+}
+
+.button {
+  max-width: 100px;
+}
+
+.mb {
+  margin-bottom: $margin-bottom-big;
+}
+
+.title {
+  margin: 0 0 10px;
+}

@@ -1,0 +1,61 @@
+@import '../../assets/styles/mixins';
+@import '../../assets/styles/variables';
+
+$border-radius: $border-radius-md $border-radius-md 0 0;
+
+.container {
+  display: flex;
+  max-width: 500px;
+  justify-content: center;
+  align-items: flex-end;
+  width: 100%;
+  overflow: hidden;
+  height: 60px;
+  min-height: 60px;
+  padding: 0 16px;
+}
+
+.container > :last-child {
+  border-top-right-radius: $border-radius-md;
+}
+
+.container > :first-child {
+  border-top-left-radius: $border-radius-md;
+}
+
+.tab {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: white;
+  height: 80%;
+  width: 100%;
+  border: 1px solid $color-grey;
+  transition: height 0.4s, border-radius 0.4s;
+
+  &:hover {
+    background: #f3f7f8;
+    color: #1fc7d4;
+  }
+}
+
+.active {
+  height: 100%;
+  border-radius: $border-radius;
+}
+
+.status {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #b0b7b9;
+  border: 1px solid $color-grey;
+  margin-bottom: 5px;
+}
+
+.done {
+  background: $color-green;
+}
+

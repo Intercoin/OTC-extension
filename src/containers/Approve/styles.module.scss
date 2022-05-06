@@ -1,0 +1,84 @@
+@import '../../assets/styles/mixins';
+@import '../../assets/styles/variables';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 16px;
+  width: 100%;
+}
+
+.title {
+  margin: 20px;
+  text-align: center;
+  font-size: 24px;
+}
+
+.network {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.account {
+  @include flexbox(flex-start);
+  flex-direction: column;
+  width: 100%;
+  padding: 20px;
+  border-top: 1px solid $color-grey;
+  border-bottom: 1px solid $color-grey;
+}
+
+.accountInfo {
+  @include flexbox(center, space-between);
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.accountInfoText {
+  max-width: 300px;
+  opacity: 0.7;
+}
+
+.value {
+  @include flexbox();
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.buttonWrap {
+  margin-top: 20px;
+  @include flexbox();
+}
+
+.button {
+  margin-right: 20px;
+}
+
+.subtitle {
+  margin: 0 0 16px;
+  font-weight: 600;
+}
+
+.text {
+  margin-bottom: 10px;
+  opacity: 0.7;
+  word-break: break-all
+}
+
+.subtext {
+  padding: 16px;
+}
+
+.personInfoWrap {
+  display: flex;
+  overflow: hidden;
+  max-width: 200px;
+}
+
+.personInfo {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-left: 10px;
+}

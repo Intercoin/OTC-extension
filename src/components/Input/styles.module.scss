@@ -1,0 +1,31 @@
+@import '../../assets/styles/mixins';
+@import '../../assets/styles/variables';
+
+.inputWrapper {
+  font-family: Asul;
+  background-color: rgb(243, 243, 250);
+  border-radius: $border-radius-sm;
+  width: 100%;
+  & > .input {
+    border-radius: $border-radius-sm;
+    color: rgb(40, 13, 95);
+    padding: 20px;
+    background: transparent;
+    width: 100%;
+    font-size: 18px;
+    border: 2px solid transparent;
+    &::placeholder {
+      color: rgb(122, 112, 141);
+    }
+    &:focus {
+      border: 2px solid #2684ff;
+    }
+    &:disabled {
+      cursor: no-drop;
+    }
+  }
+
+  & > .error {
+    border-color: $color-error;
+  }
+}

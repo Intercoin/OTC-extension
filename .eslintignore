@@ -1,0 +1,7 @@
+# /node_modules/* and /bower_components/* in the project root are ignored by default
+
+build/*
+src/serviceWorker.js
+src/reportWebVitals.js
+
+**/__generated__/*

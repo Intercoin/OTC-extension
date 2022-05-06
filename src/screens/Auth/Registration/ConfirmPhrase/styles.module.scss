@@ -1,0 +1,46 @@
+@import '../../../../assets/styles/mixins';
+@import '../../../../assets/styles/variables';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  width: 100%;
+  padding: 15px 16px;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.confirmPhrase {
+  text-align: center;
+  position: relative;
+  @include flexbox();
+  border: $color-light-blue solid 1px;
+  border-radius: $border-radius-md;
+  padding: 20px;
+  margin-bottom: 20px;
+  height: 100px;
+}
+
+.buttonContainer {
+  flex-wrap: wrap;
+  @include flexbox();
+}
+
+.buttonConfirm {
+  margin-left: 20px;
+}
+
+.buttonWord {
+  margin: 5px 10px;
+  max-width: 100px;
+  width: 100%;
+}
+
+.buttonWrap {
+  @include flexbox();
+  margin-top: 20px;
+}
